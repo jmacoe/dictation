@@ -1,0 +1,245 @@
+html {
+	font-family: "Segoe UI", Helvetica, Arial, sans-serif;
+	font-size: 100%;
+}
+
+body {
+	background: #001129;
+}
+
+header {
+	margin: 3.5rem 1.5rem;
+	max-width: 21rem;
+}
+
+h1 {
+	color: #fff;
+	background: #002050;
+	text-align: center;
+}
+
+#options-container {
+	min-width: 20rem;
+	max-width: 64rem;
+	width: 60%;
+	background: #001129;
+	padding: 1rem; 
+	margin: 0rem auto; 
+}
+
+#text-container {
+	background-color: #fff;
+	border-radius: 6px;
+	width: 100%;
+	max-width: 96rem;
+	height: 6rem;
+	text-align: center;
+	margin: 0 0 5px 0;
+	visibility: hidden;
+}
+
+.speech-status {
+	position: absolute;
+	right: 1.2rem;
+	top: 4rem;
+	width: 2rem;
+	visibility: hidden;
+}
+
+#support-message {
+	position: absolute;
+	top: 0;
+	color: #fff;
+	background-color: #000;
+	left: 0;
+	padding: .7rem 0;
+	margin: 0 auto;
+	width: 100%;
+	font-size: 1rem;
+	text-align: center;
+}
+
+#support-message strong {
+	color: #4c9d4c;
+}
+
+#support-message.unSupported strong {
+	color: #800;
+}
+
+input[type="text"] {
+	box-sizing: border-box;
+	border-radius: 6px;
+	width: 95%; 
+	margin: 0.8rem 0;
+	font-size: 3rem;
+	height: 4.5rem;
+	text-align: center;
+}
+
+input[type="text"]:focus {
+	outline: 1px dashed #000;
+	outline-offset: 1px;
+}
+
+label {
+	float: left;
+	max-width: 6rem;
+	width: 100%;
+	font-size: 1.1rem;
+	color: #fff;
+}
+
+.custom-label {
+	position: relative;
+	width: 54rem;
+	max-width: 54rem;
+	margin: 0;
+	color: #000;
+	font-size: 1rem;
+}
+
+#next-btn {
+	visibility: hidden;
+}
+
+@media (min-width: 33.75em) {
+
+	label {
+		margin: 1.5rem 0;
+	}
+
+}
+
+.option {
+	margin-bottom: 1.5rem;
+}
+
+#buttons-container {
+	text-align: center;
+}
+
+.button-container {
+	text-align: center;
+}
+
+button {
+	display: inline-block;
+	border: 1px solid #167d3e;
+	font-size: 2rem;
+	padding: .5rem .8rem; 
+	background: #167d3e;
+	color: #fff;
+	font-weight: bold;
+	margin: 0 0 5px 0;
+	width: 100%;
+	text-align: center;
+}
+
+button:hover, button:focus {
+	opacity: .75;
+	cursor: pointer;
+}
+
+button {
+	transition: all ease-in .5s;
+}
+
+/* Steph Edits */
+
+.soundwave {
+	position: absolute;
+	bottom: 0;
+	opacity: .3;
+	z-index: -1;
+}
+
+.dropdown {
+	height: auto;
+	font-size: 1rem;
+	background-color: hsla(328, 100%, 100%, 1);
+	padding-right: 1.7rem;
+}
+
+.dropdown--long {
+	width: 25rem;
+}
+
+.dropdown--short {
+	width: 8rem;
+}
+
+footer {
+	position: absolute;
+	bottom: 0;
+	left: 0;
+	padding: .7rem 0;
+	margin: 0 auto;
+	text-align: center;
+	width: 100%;
+	background-color: grey;
+}
+
+select {
+    width: 100%;
+    max-width: 64rem;
+    height: 3.6rem;
+    border: 1px solid hsla(0, 0%, 0%, .6);
+    padding: .7rem 1rem;
+    background-color: hsla(0, 0%, 100%, .4)
+}
+
+select {
+    margin-top: .7rem
+}
+input:hover,
+select:hover {
+    border-color: hsla(0, 0%, 0%, .8);
+    background-color: hsla(0, 0%, 100%, .6)
+}
+input:focus,
+select:focus {
+    border-color: #0078d7;
+    background-color: #fff;
+    outline: 0
+}
+select {
+    padding-right: 3.4rem
+}
+select:disabled {
+    background-color: hsla(0, 0%, 0%, .2);
+    color: hsla(0, 0%, 0%, .2);
+    cursor: not-allowed;
+    pointer-events: none;
+    outline: 0
+}
+select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    border-radius: 0;
+    background: url(https://az813057.vo.msecnd.net/images/select-arrow.svg) right 1rem center/1.4rem .8rem no-repeat;
+    text-indent: .01px;
+    overflow: hidden
+}
+select::-ms-expand {
+    display: none
+}
+select option:checked,
+select option:focus {
+    background-color: #3a96dd;
+    color: #fff
+}
+select option,
+select:active {
+    background-color: #fff;
+    color: #000
+}
+select option:active {
+    background-color: #767676;
+    color: #000
+}
+select:disabled {
+    border-color: hsla(0, 0%, 0%, .2);
+    color: hsla(0, 0%, 0%, .6)
+}

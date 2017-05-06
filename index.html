@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en-US" prefix="og: http://ogp.me/ns#" xmlns:fb="http://ogp.me/ns/fb#">
+<head>
+	<meta charset="utf-8">
+	<title>Children's dictation app</title>
+	<meta name="description" content="Allow your children to practice dictation for themselves.">
+	<meta name="keywords" content="game, dictation, dictate, children, child, speech">
+	<meta name="author" content="jmacoe">
+	<link rel="stylesheet" href="styles/style.css?v=3">
+	<link rel="shortcut icon" href="images/parrot.png">
+	<meta property="og:url" content="http://jmacoe.com/dictation/" />
+	<meta property="og:type" content="website" />
+	<meta property="og:title" content="Children's dictation app" />
+	<meta property="og:description" content="Allow your children to practice dictation for themselves." />
+	<meta property="og:image" content="http://jmacoe.com/dictation/images/parrot.jpg" />
+</head>
+<body>
+	<div id="fb-root"></div>
+	<script>(function(d, s, id) {
+		  var js, fjs = d.getElementsByTagName(s)[0];
+		  if (d.getElementById(id)) return;
+		  js = d.createElement(s); js.id = id;
+		  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.9&appId=145060452185001";
+		  fjs.parentNode.insertBefore(js, fjs);
+		}(document, 'script', 'facebook-jssdk'));
+	</script>
+	<img id="speech-status" class="speech-status">
+	<header>
+	</header>
+	<div id="options-container">
+		<div class="option">
+			<label for="level">Language</label>
+			<select name="language" id="language" class="dropdown dropdown--long" aria-label="language">
+				<option selected value='en-us' >English</option>
+				<option value='es-es'>Español</option>
+			</select>
+		</div>
+		<div id="buttons-container">
+			<button id="play-btn">Start</button>
+		</div>
+		<div id="text-container">
+			<input type="text" name="answer" id="answer" placeholder="Type your answer.">
+		</div>
+		<div id="next-container" class="button-container">
+			<button id="next-btn">Next</button>
+		</div>
+
+		<div>
+			<script async src="//pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
+			<!-- Dictation -->
+			<ins class="adsbygoogle"
+			     style="display:block"
+			     data-ad-client="ca-pub-4185515640317513"
+			     data-ad-slot="3574551389"
+			     data-ad-format="auto"></ins>
+			<script>
+			(adsbygoogle = window.adsbygoogle || []).push({});
+			</script>
+		</div>
+	</div>
+	<div id="support-message" class="support-message"></div>
+	<footer>
+		<div class="fb-like" data-href="http://jmacoe.com/dictation" data-layout="button" data-action="like" data-size="large" data-show-faces="true" data-share="true"></div>
+	</footer>
+	<!-- <script src="scripts/index.js"></script> -->
+	<script language="javascript">
+		function loadScript(sScriptSrc) {
+			var oHead = document.getElementsByTagName('head')[0];
+			var oScript = document.createElement('script');
+			oScript.type = 'text/javascript';
+			oScript.src = sScriptSrc;
+			oHead.appendChild(oScript);
+		}
+
+		loadScript("scripts/index.js");
+	</script>
+
+	<script>
+		(function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+		(i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+		m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+		})(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
+
+		ga('create', 'UA-98443450-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+</html>
